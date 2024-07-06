@@ -1,4 +1,4 @@
-# utilizando a solução hand da biblioteca midiapipe, que nós fornece o mapeamento das mãos
+# utilizando a solução hand da biblioteca midiapipe, que nos fornece o mapeamento das mãos
 import cv2
 import mediapipe as mp
 
