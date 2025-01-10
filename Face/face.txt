@@ -1,0 +1,27 @@
+==================== TEXTO PARA EXPLICAR ALGUMAS COISAS ==================== 
+
+mp_drawing.draw_landmarks(
+                    image=image,
+                    landmark_list=face_landmarks,
+                    connections=mp_face_mesh.FACEMESH_TESSELATION,
+                    landmark_drawing_spec=drawing_spec,
+                    connection_drawing_spec=connection_spec
+                )
+
+essa é uma das funcoes da biblioteca mediapipe, usada para desenhar pontos e conexoes
+de landmarks (pontos de referencia) detectados em uma imagem ou video
+
+parametros:
+
+- image (obrigatorio): a imagem ou frame em que os landmarks serao desenhados
+
+- landmark_list (obrigatorio): eh a lista de landmarks detectados pela solucao, como o FaceMesh.
+esses lendmarks contem coordenadas normalizadas, ou seja, valores entre 0 e 1 para x e y (com base nas dimensoes da imagem)
+e um valor relativo de z (profundidade)
+
+- connections (opcional): define quais arestas entre os landmarks devem ser desenhadas: por exemplo: mp_face_mesh.FACEMESH_TESSELATION desenha uma malha
+detalhada no rosto, mp_face_mesh.FACEMESH_CONTOURS desenha apenas os contornos principais
+
+- landmark_drawing_spec (opcional): define como os landmarks individuais (pontos) devem ser desenhados
+
+connection_drawing_spec (opcional): define como as conexoes entre os pontos (linhas) devem ser desenhadas
