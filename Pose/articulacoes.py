@@ -14,7 +14,7 @@ results = pose.process(image_rgb)
 # verificando se pontos do corpo foram detectados
 if results.pose_landmarks:
     for idx, landmark in enumerate(results.pose_landmarks.landmark):
-        print(f"Point {idx}: ({landmark.x}, {landmark.y}, {landmark.z})")
+        print(f"Ponto {idx}: ({landmark.x}, {landmark.y}, {landmark.z})")
 else:
     print("Nenhum ponto detectado.")
 

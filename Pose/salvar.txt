@@ -1,0 +1,2 @@
+# Salvando a imagem modificada para verificar o resultado
+cv2.imwrite("filtered_pose_image.png", image)
